@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>gradient</title>
+    <style type="text/css">
+        body{
+            background-color: mediumpurple;
+        }
+        p {
+            color: #000;
+            font-size: 1in;
+            background: linear-gradient(yellow,blue);
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            color: black;
+            font-size: 50px;
+            text-align: center;
+            margin: 20px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <p>Ми вивчаємо градієнти</p>
+    <div style="background: linear-gradient(green, red);">Лінійний градієнт</div>
+    <div style="background: linear-gradient(to left, green, red); ">В ліво</div>
+    <div style="background: linear-gradient(90deg, green, red); ">90 градусів</div>
+    <div style="background: linear-gradient(45deg, green, red); ">45 градусів</div>
+    <div style="background: linear-gradient(180deg, orange, forestgreen); ">180 градусів</div>
+    <div style="background: linear-gradient(225deg, orange, forestgreen); ">225 градусів</div>
+    <div style="background: linear-gradient(180deg, orange 20%, forestgreen); ">180 градусів 20%</div>
+    <div style="background: linear-gradient(180deg, orange 40%, forestgreen); ">180 градусів 40%</div>
+    <div style="background: linear-gradient(180deg, yellow 50%, blue 50%); ">180 градусів 50% на 50%</div>
+    <div style="background: linear-gradient(225deg, yellow 30%, blue 80%); ">225 градусів 30% на 80%</div>
+    <div style="background: linear-gradient(225deg, yellow 45%, blue 45%); ">225 градусів 45% на 45%</div>
+    <div style="background: linear-gradient(90deg, yellow, blue); width: 400px">90 градусів 400px</div>
+    <div style="background: radial-gradient(navy,violet); ">Радіальний градієнт</div>
+    <div style="background: radial-gradient(circle at 100px 150px, navy,violet); ">100px на 150px</div>
+    <div style="background: radial-gradient(navy 50%,violet); border-radius: 10% 20% 30% 40%;">заокруглення</div>
+    <div style="background: radial-gradient(navy,violet 25%); border-radius: 50%;">коло</div>
+    <div style="background: conic-gradient(chartreuse,darkmagenta); ">Конічний градієнт</div>
+    <div style="background: conic-gradient(chartreuse,darkmagenta, orange, forestgreen); ">Чотирьох кольоровий</div>
+    <div style="background: conic-gradient(chartreuse 25%, darkmagenta 25% 50%, orange 50% 75%, forestgreen 75% 100%); width: 400px; ">Від 0% до 100%</div>
+    <div style="background: conic-gradient(at 60% 35%, chartreuse,darkmagenta, orange, forestgreen); width: 400px ">60% на 35%</div>
+</body>
+</html>
